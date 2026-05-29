@@ -19,7 +19,7 @@ function updateTime() {
 
     sydneyDateElement.innerHTML = sydneyTime.format("MMMM	Do YYYY");
     sydneyTimeElement.innerHTML = sydneyTime.format(
-      "h:mm:ss [<small>]A[</small>]",
+      "hh:mm:ss [<small>]A[</small>]",
     );
   }
 }
