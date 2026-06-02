@@ -22,6 +22,18 @@ function updateTime() {
       "hh:mm:ss [<small>]A[</small>]",
     );
   }
+
+  let lubumbashiElement = document.querySelector("#lubumbashi");
+  if (lubumbashiElement) {
+    let lubumbashiDateElement = lubumbashiElement.querySelector(".date");
+    let lubumbashiTimeElement = lubumbashiElement.querySelector(".time");
+    let lubumbashiTime = moment().tz("Africa/Lubumbashi");
+
+    lubumbashiDateElement.innerHTML = lubumbashiTime.format("MMMM	Do YYYY");
+    lubumbashiTimeElement.innerHTML = lubumbashiTime.format(
+      "hh:mm:ss [<small>]A[</small>]",
+    );
+  }
 }
 
 function updateCity(event) {
